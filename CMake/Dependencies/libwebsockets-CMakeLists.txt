@@ -28,7 +28,7 @@ ExternalProject_Add(project_libwebsockets
     GIT_TAG           v4.2.1
     PATCH_COMMAND     ${PATCH_COMMAND}
     PREFIX            ${CMAKE_CURRENT_BINARY_DIR}/build
-  SOURCE_DIR      "${CMAKE_CURRENT_BINARY_DIR}/dependency"
+    SOURCE_DIR      "${CMAKE_CURRENT_BINARY_DIR}/source"
     CMAKE_ARGS
         -DCMAKE_INSTALL_PREFIX=${OPEN_SRC_INSTALL_PREFIX}
         -DLWS_WITH_HTTP2=1
